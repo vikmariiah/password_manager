@@ -9,7 +9,7 @@ app = FastAPI()
 
 
 #user registration
-@app.post("\register")
+@app.post("/register")
 def register(email: str, password: str):
     conn = get_connection()
     cursor = conn.cursor()
